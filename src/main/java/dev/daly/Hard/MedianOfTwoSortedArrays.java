@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class MedianOfTwoSortedArrays {
     //Brute force method, not meeting time complexity requirements which is O(log(m+n))
-    //The time complexity is O(m+n) because we are iterating through both arrays
+    //The time complexity is O((m+n)log(m+n)) because we are merging two arrays which is O(m+n) and then sorting the array which is O(log(m+n))
     //The space complexity is O(m+n) because we are creating a new array to store the values of both arrays
 
     public static void main(String[] args) {
